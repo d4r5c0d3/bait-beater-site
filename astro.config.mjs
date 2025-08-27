@@ -6,7 +6,6 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
     redirects: {
         '/' : '/nl/',
-        '/index.html': '/nl/'
     },
     vite: {
         plugins: [tailwindcss()]

@@ -1,12 +1,37 @@
 ---
-import Page from '../../layouts/Page.astro' ;
-import HeroSection from '../../components/HeroSection.astro' ;
+import Page from "../../layouts/Page.astro";
+import PageSection from "../../components/PageSection.astro";
+import HeroSection from "../../components/HeroSection.astro";
 ---
 
-
 <Page>
-	<HeroSection/>
-	<div class="container mx-auto">
-		<h1>index</h1>
-	</div>
+  <div class="container mx-auto">
+    <HeroSection />
+    <PageSection title="What Is De Bait Beater?">
+      <p>
+        De Bait Beater is a professional fishing tool that revolutionizes
+        baiting techniques, allowing you to attract more fish effortlessly.
+      </p>
+      <p>
+        It uses a floating system like a marker to place your bait exactly where
+        you want it.
+      </p>
+    </PageSection>
+    <PageSection title="How Does It Work?">
+      <p>
+        De Bait Beater is designed to be user-friendly and efficient. Simply
+        fill it with your preferred bait, cast it into the water, and let the
+        built-in mechanism do the rest. The bait is released gradually, creating
+        a trail that attracts fish to your fishing spot.
+      </p>
+    </PageSection>
+    <PageSection title="Benefits" />
+    <PageSection title="Become a Distributor">
+      <p>Partner with us and bring De Bait Beater to your market.</p>
+    </PageSection>
+    <PageSection title="FAQ" />
+    <PageSection title="contact">
+      <p>Ready to Fish Smarter?</p>
+    </PageSection>
+  </div>
 </Page>

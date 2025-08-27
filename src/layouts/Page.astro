@@ -1,5 +1,8 @@
 ---
 import '../styles/site.css';
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+
 const title = Astro.props.title || 'The Bait Beater - Fish Smarter, Catch More';
 const description = Astro.props.description || 'Astro is a modern static site builder.';
 const lang = Astro.props.lang || 'nl';
@@ -13,7 +16,11 @@ const lang = Astro.props.lang || 'nl';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<slot/>
+	<body class="flex flex-col min-h-screen">
+        <Header/>
+        <main class="flex-grow">
+            <slot/>
+        </main>
+        <Footer/>
 	</body>
 </html>

@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+  --color-background: #fef2e3;
+  --color-text: #215d5d;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: system-ui, sans-serif;
+  }
+}

@@ -1,16 +1,12 @@
 ---
-
+import Page from '../../layouts/Page.astro' ;
+import HeroSection from '../../components/HeroSection.astro' ;
 ---
 
-<html lang="nl">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Bait beater NL</title>
-	</head>
-	<body>
-		<h1>BaitBeater</h1>
-	</body>
-</html>
+
+<Page>
+	<HeroSection/>
+	<div class="container mx-auto">
+		<h1>index</h1>
+	</div>
+</Page>

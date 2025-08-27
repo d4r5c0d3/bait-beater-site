@@ -1,14 +1,16 @@
 ---
-
+const title = Astro.props.title || 'The Bait Beater - Fish Smarter, Catch More';
+const description = Astro.props.description || 'Astro is a modern static site builder.';
+const lang = Astro.props.lang || 'nl';
 ---
 
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<slot/>
